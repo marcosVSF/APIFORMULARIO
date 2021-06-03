@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>  
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>
+                    body{
+            background-color: #d3c9c9;
+            font-size: 18px;
+        }
+        #site > footer{
+            text-align: center;
+            padding: 7px;
+            background-color: #9e9898;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }        
+        textarea{
+            resize: none;
+        }
+        </style>
+    <div>
+        <form>
+            <div>
+                <label for="Nome Completo">Nome Completo</label>
+            <input type="text" id="Nome Completo" placeholder="Ex: Marcos Vinicius De Sales Ferreira">
+            </div>
+            <div>
+                <label for="Nascimento">Data de Nascimento</label>
+            <input type="date" id="Nascimento" placeholder="Ex: Marcos Vinicius De Sales Ferreira">
+            </div>
+            <div>
+                <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Ex: marcos@gmail.com">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+            <input type="password" id="senha">
+            </div>
+            <div>
+                <label for="Numero de telefone">Numero de Telefone</label>
+            <input type="text" id="Numero de telefone" placeholder="Ex: +55 00 123456789">
+            </div>
+            <div>
+                <label for="resumo">Como Podemos Melhorar😉</label>
+                <textarea name="resumo" id="resumo" rows="6" maxlength="255">
+                </textarea >
+                <p> <span id="contador" >N</span> caracteres restante</p>
+            </div>
+            <div>
+                <input type="button" value="Enviar Cadastro">
+            </div>
+            <div id="horario">
+                <p id="horario"></p>
+                <input type="button" value="HORARIO DE ACESSO"> 
+            </div>
+            </form>
+    </div>
+    <div id="site">
+                <footer><a href="Projeto.html">Clique Aqui Para Voltar
+        </a></footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

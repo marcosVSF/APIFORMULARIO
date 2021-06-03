@@ -1,0 +1,90 @@
+        body{
+            background-color: #e9e3e3;
+            font-size: 18px;
+        }
+        #site{
+            width: 90%;
+            max-width: 950px;
+            min-width: 650px;
+            margin: 25px auto;
+            display: grid;
+            grid-template-areas:
+            'a1 a1'
+            'a2 a3'
+            'a4 a4';
+            grid-auto-columns: 20% 80%;
+        }
+        #site > header{
+            background-color: #a6b0c5;
+            grid-area: a1;      
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #site >header > img{
+            max-height: 150px;
+            min-height: 120px;
+            height: 150px;
+            
+        }
+        #site > aside{
+            background-color: #b6c2cc;
+            grid-area: a2;
+        }
+        #site > aside a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 2px solid #fff;
+            color: #333;
+            background-color: #b6c2cc;
+        }
+        #site > aside a:hover{
+            color: #000;
+            background-color: #EDF5E0;
+        }
+        #site > main{
+            background-color: #E6E7E9;
+            grid-area: a3;
+            padding: 10px;
+        }
+        #site > main section header{
+            margin: 5px;
+            flex-grow: 1;
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 2px;
+        }
+        #site > main section img{
+            width: 100%;
+            font-weight: bold;
+            padding: 3px;
+        }
+        #site > main > article{
+            text-align: center;           
+        }
+        #site > main > article p{
+           text-align: justify;
+           padding: 10px;
+        }
+        #site > footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #EDF5E0;
+            grid-area: a4; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }        
+        form div {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 20px;
+        }
+        textarea{
+            resize: none;
+        }
